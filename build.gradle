@@ -1,0 +1,15 @@
+apply plugin: "java"
+
+repositories {
+    jcenter()
+}
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+dependencies {
+    testCompile('org.testng:testng:6.9.6')
+    testCompile(group: 'org.uispec4j', name: 'uispec4j', version: '2.5-RC1', classifier: 'jdk8')
+}
